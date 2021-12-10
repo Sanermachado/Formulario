@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Pernas de Pau FC</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Cadastro de Jogador</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de email com-->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <!-- Campo dos times com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label><strong>Qual seu time da peneira?</strong></label>
+                <label>
+                    <input type="radio" name="times" value="canhotos" checked> Canhotos invertidos
+                </label>
+                <label>
+                    <input type="radio" name="times" value="atacantes">  Só tem atacante
+                </label>
+                <label>
+                    <input type="radio" name="times" value="engessados"> Zagueiros engessados
+                </label>
+            </div>
+
+            <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+            <div class="campo">
+                <label for="senioridade"><strong>Em que faze da peneira você esta ?</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Inicio</option>
+                  <option>Meio </option>
+                  <option>Fim</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- Campo de pocição para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>Selecione as posições que jogou:</strong></label><br><br>
+                    <input type="checkbox" id="posicao1" name="posicao1" value="Zagueiro">
+                    <label for="posicao1"> Zagueiro</label>
+                    <input type="checkbox" id="posicao2" name="posicao2" value="Volante">
+                    <label for="posicao2"> Volante</label>
+                    <input type="checkbox" id="posicao3" name="posicao3" value="Lateral">
+                    <label for="posicao3"> Lateral</label>
+                    <input type="checkbox" id="posicao4" name="posicao4" value="Meio">
+                    <label for="posicao4"> Meio Campo</label>
+                    <input type="checkbox" id="posicao5" name="posicao5" value="AtacanteC">
+                    <label for="posicao5"> Atacante Esquerdo</label>
+                    <input type="checkbox" id="posicao6" name="posicao6" value="AtacanteD">
+                    <label for="posicao6"> Atacante Direito</label>
+                    <input type="checkbox" id="posicao7" name="posicao7" value="Centroavante">
+                    <label for="posicao7"> Centroavante</label>
+                </div>
+            </fieldset>
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais da sua experiência na peneira: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
